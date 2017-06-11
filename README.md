@@ -9,7 +9,7 @@ actually corresponds **struct**, not C procedures.
 Here we will call this upgraded functions as **s-function**
 for C which is an abbreviation for "struct-function".  
 
-## Key Elements
+## Key Functional Programming Elements
 ### Closure
 Fundamentally, **closure** means store local environment
 values (**env-values**) into **functions**.
