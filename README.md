@@ -1,6 +1,6 @@
 # Pure-C
-Here I show examples of how to perform pure functional programming in   
-the ISO standardized C programming language  
+Here I show examples of how to perform pure functional programming in
+the ISO standardized C programming language
 (no need for vendor plugin/extensions)
 
 The key to perform functional programming in the C language  
@@ -17,3 +17,5 @@ Here we store **env-values** into **s-functions**.
 **C99** provides **compound literal** which make it  
 easy to create/return **struct** on-the-fly.
 
+## Compilation
+* use **ninja**
