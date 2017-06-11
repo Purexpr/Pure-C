@@ -2,8 +2,7 @@
 
 struct
 fn_add
-{
-    const int
+{   const int
     x;
 
     int
