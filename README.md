@@ -16,3 +16,4 @@ values (**env-values**) into **functions**.
 Here we store **env-values** into **s-functions**.
 **C99** provides **compound literal** which make it  
 easy to create/return **struct** on-the-fly.
+
