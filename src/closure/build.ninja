@@ -1,0 +1,18 @@
+W = -Wall -Wconversion -Wextra -Werror
+cc = gcc
+
+
+rule exe
+  command = $cc -std=c11 $W $in -o $out
+
+rule clean
+  command = powershell rm $files
+
+
+build main.exe: exe main.c closure.c
+
+build clean: clean 
+  files = main.exe
+
+
+default main.exe

@@ -1,0 +1,23 @@
+def:
+- W: -Wall -Wconversion -Wextra -Werror
+- cc: gcc
+
+rule:
+- exe: $cc -std=c11 $W $in -o $out
+- clean: powershell rm $files
+
+task:
+- out: main.exe
+  in:
+  - main.c
+  - closure.c
+  rule: exe
+
+- out: clean
+  def:
+  - files:
+    - main.exe
+  rule: clean
+
+default:
+- main.exe
